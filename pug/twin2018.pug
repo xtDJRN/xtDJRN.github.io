@@ -1,0 +1,66 @@
+div.title
+    h3 TechnoTUT Presents All Genre DJ Event
+    h1.eventName
+        b Sakaki Underground
+    h3 October 6, 7, 2018, 9:00AM - 5:00PM
+        br
+        | 豊橋技術科学大学 コモンズ１
+        br
+        | Door: Free
+
+div.intro
+    p
+        h1
+        big TUT FESTIVAL x DJ EVENT
+    p 今年は名古屋大学Anti-Aging Record，愛知大学DAUからゲストDJが参戦！
+    p レギュラー陣もパワーアップしてます！
+    p TechnoからHardcoreまで何でもありのオールジャンル2Daysイベント！！
+    p 
+        b 入場無料なので気軽に来てね！
+
+-
+    var guests = {
+        CLion : {
+            name : "Clion"
+            circle : "Anti-Aging Record (Nagoya University)"
+            image : "https://i.imgur.com/ZneceTm.png"
+            description : "2017年4月にDJ活動を開始。<br> Tranceのミックスを中心に行い、Tranceの多様性を世に知らしめることを活動の目的としている（昨日くらいにそう決めた）。<br> Producerとしても活動しており、昨年2017年にUltimo Recordsより海外レーベルからのリリースを果たしている。 <br>カレーハウスCoCo壱番屋の手仕込チキンカツカレーとシーザーサラダが大好き。"
+        },
+
+        Riku : {
+            name : "Riku"
+            circle : "Anti-Aging Record (Nagoya University)"
+            image : "https://i.imgur.com/zmIRmTh.png"
+            description : "名古屋大学作曲サークルAnti-Aging Record所属。<br>2016年にKONAMIの音楽ゲームMUSECAへの楽曲提供(dotη名義) 、2017年には海外レーベルTotal Hardcore Digitalからのリリース、We Are One DigitalのMixにtakatinとの合作曲が使用される等、最近いい感じのトラックメイカー。<br>メインで製作しているUK Hardcore以外のジャンル(と同人音声作品)も広く愛しており、Spotify(とDLsite)のdigはもはや生活の一部となっている。"
+        },
+
+        kouhei : {
+            name : "kouhei"
+            circle : "DAU (Aichi University)"
+            image : "https://i.imgur.com/SPCMZaL.jpg"
+            description : "名古屋を拠点に活動しているオタク。<br>2015年に某ハードコアレーベルのパーティーで初めてクラブに行き、その後大学入学を機に2016年夏よりDJキャリアをスタート。<br>UK Hardcoreを中心にベースの強いトラックを好んで回している。2018年には名古屋の大型パーティー「SCALD」に出演を果たすなど徐々に活躍の幅を広げつつある。"
+        },
+
+        DJSONOBE : {
+            name : "DJ SONOBE"
+            circle : "DAU (Aichi University)"
+            image : "https://i.imgur.com/KeaZMeD.jpg"
+            description : "愛知大学DAU仮サークル長。<br>2016年に大学のダンスサークルにDJ担当として入会し、サークル内のイベントで細々とDJ活動を続けている。<br>「ジャンルに捕らわれず、良いと思ったトラックを如何にして繋げられるか」をモットーに日々精進中。<br>アイカツ！が好き。"
+        }   
+    }
+
+.guests
+    h1 Guests
+    
+    each val in guests
+        .row
+            div.col-xs-12.col-sm-6.col-md-6
+                h2 val.name
+            div.col-xs-12.col-sm-6.col-md-6
+                h2
+                    small val.circle
+        .row
+            div.col-xs-12.col-sm-6.col-md-6
+                img.img-responsive(src=val.image)
+            div.col-xs-12.col-sm-6.col-md-6
+                p val.description
