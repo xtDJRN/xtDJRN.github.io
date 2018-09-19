@@ -1,7 +1,17 @@
-img{
-	width: auto;
-	height: 80%;
-	vertical-align: middle;
-	position: absolute;
-	left: 50%;
+.row-center{
+	text-align:center;
+	letter-spacing:-0.4em;
+}
+.row-center > [class*='col-'] {
+	display:inline-block;
+	letter-spacing:0;
+	vertical-align:top;
+	float:none !important;
+}
+
+.row-center.va-middle > [class*='col-'] {
+	vertical-align:middle;
+}
+.row-center.va-bottom > [class*='col-'] {
+	vertical-align:bottom;
 }
