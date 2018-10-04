@@ -15,3 +15,7 @@
 .row-center.va-bottom > [class*='col-'] {
 	vertical-align:bottom;
 }
+
+td {
+	white-space: nowrap;
+}
